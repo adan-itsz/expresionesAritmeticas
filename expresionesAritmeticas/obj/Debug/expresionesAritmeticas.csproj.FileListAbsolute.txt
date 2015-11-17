@@ -1,0 +1,9 @@
+c:\users\adan\documents\visual studio 2013\Projects\expresionesAritmeticas\expresionesAritmeticas\bin\Debug\expresionesAritmeticas.exe.config
+C:\Users\adan\Documents\Visual Studio 2013\Projects\expresionesAritmeticas\expresionesAritmeticas\bin\Debug\expresionesAritmeticas.exe
+C:\Users\adan\Documents\Visual Studio 2013\Projects\expresionesAritmeticas\expresionesAritmeticas\bin\Debug\expresionesAritmeticas.pdb
+C:\Users\adan\Documents\Visual Studio 2013\Projects\expresionesAritmeticas\expresionesAritmeticas\obj\Debug\expresionesAritmeticas.csprojResolveAssemblyReference.cache
+C:\Users\adan\Documents\Visual Studio 2013\Projects\expresionesAritmeticas\expresionesAritmeticas\obj\Debug\expresionesAritmeticas.Form1.resources
+C:\Users\adan\Documents\Visual Studio 2013\Projects\expresionesAritmeticas\expresionesAritmeticas\obj\Debug\expresionesAritmeticas.Properties.Resources.resources
+C:\Users\adan\Documents\Visual Studio 2013\Projects\expresionesAritmeticas\expresionesAritmeticas\obj\Debug\expresionesAritmeticas.csproj.GenerateResource.Cache
+C:\Users\adan\Documents\Visual Studio 2013\Projects\expresionesAritmeticas\expresionesAritmeticas\obj\Debug\expresionesAritmeticas.exe
+C:\Users\adan\Documents\Visual Studio 2013\Projects\expresionesAritmeticas\expresionesAritmeticas\obj\Debug\expresionesAritmeticas.pdb
