@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPosfija = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtAritmetica
@@ -102,11 +103,23 @@
             this.txtPosfija.Size = new System.Drawing.Size(285, 30);
             this.txtPosfija.TabIndex = 11;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(343, 261);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 32);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Limpiar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 318);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPosfija);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -131,6 +144,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPosfija;
+        private System.Windows.Forms.Button button1;
     }
 }
 

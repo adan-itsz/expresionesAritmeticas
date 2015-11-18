@@ -29,11 +29,25 @@ namespace expresionesAritmeticas
 
         private void btnresolver_Click(object sender, EventArgs e)
         {
-            expresionAritmetica = txtAritmetica.Text;
-            solucionPosfijo = pos.postfijo(expresionAritmetica);
-            txtPosfija.Text= solucionPosfijo;
-            solucion = resolverOperacion.resultadoExpresion(solucionPosfijo);
-            txtSolucion.Text = Convert.ToString(solucion);
+            try
+            {
+                expresionAritmetica = txtAritmetica.Text;
+                solucionPosfijo = pos.postfijo(expresionAritmetica);
+                txtPosfija.Text = solucionPosfijo;
+                solucion = resolverOperacion.resultadoExpresion(solucionPosfijo);
+                txtSolucion.Text = Convert.ToString(solucion);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("error");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtAritmetica.Clear();
+            txtPosfija.Clear();
+            txtSolucion.Clear();
         }
     }
 }
