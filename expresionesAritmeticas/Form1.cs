@@ -22,14 +22,18 @@ namespace expresionesAritmeticas
 
         }
         String expresionAritmetica;
-        String solucion;
+        String solucionPosfijo;
+        double solucion;
         Posfijo pos = new Posfijo();
+        solucion resolverOperacion = new solucion();
 
         private void btnresolver_Click(object sender, EventArgs e)
         {
             expresionAritmetica = txtAritmetica.Text;
-            solucion = pos.postfijo(expresionAritmetica);
-            txtSolucion.Text = solucion;
+            solucionPosfijo = pos.postfijo(expresionAritmetica);
+            txtPosfija.Text= solucionPosfijo;
+            solucion = resolverOperacion.resultadoExpresion(solucionPosfijo);
+            txtSolucion.Text = Convert.ToString(solucion);
         }
     }
 }
