@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace expresionesAritmeticas
 {
@@ -24,6 +25,7 @@ namespace expresionesAritmeticas
                 {
                     if (infijo[i] == '(')
                     {
+                        notacionPostfija += " ";
                         tope++;
                         pila.Push(Convert.ToString( infijo[i]));
                     }
@@ -34,6 +36,7 @@ namespace expresionesAritmeticas
                             while (Convert.ToChar(pila.Peek()) != '(')// podria ser igual la condicion
                             {
                                 tope--;
+                                notacionPostfija += " ";
                                 notacionPostfija += pila.Pop();//podria ser pila.pop()
                             }
                             pila.Pop();
@@ -44,11 +47,13 @@ namespace expresionesAritmeticas
                             if (infijo[i] >= '0' && infijo[i] <= '9')// si es un operando
                             {
                                 notacionPostfija += infijo[i];
+                               // aqui va todo
                             }
                             else { // el char es un operador
                                 if (pila.Count == 0)
                                 {
                                     tope++;
+                                    notacionPostfija += " ";
                                     pila.Push(Convert.ToString(infijo[i]));
                                 }
                                 else
@@ -61,10 +66,12 @@ namespace expresionesAritmeticas
                                         while (pila.Count != 0)
                                         {
                                             tope--;
+                                            notacionPostfija += " ";
                                             notacionPostfija += pila.Pop();
                                         }
                                     }
                                     tope++;
+                                    notacionPostfija += " ";
                                     pila.Push(Convert.ToString(infijo[i]));
                                 }       
                             }// fin else
@@ -75,6 +82,7 @@ namespace expresionesAritmeticas
                 {
                     while (pila.Count != 0)
                     {
+                        notacionPostfija += " ";
                         notacionPostfija += pila.Pop();
                     }
                 }

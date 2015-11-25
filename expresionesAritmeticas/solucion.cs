@@ -12,6 +12,7 @@ namespace expresionesAritmeticas
         int valor2;
         int res;
         int aux;
+        string almacenarDigitos;
         Stack<int> pila = new Stack<int>();
         public  double resultadoExpresion(string posfija)
         {
@@ -19,8 +20,18 @@ namespace expresionesAritmeticas
             {
                 if (posfija[i] >= '0' && posfija[i] <= '9')//si es numero lo aplia
                 {
-                    aux = Convert.ToInt32(posfija[i]-'0');
-                    pila.Push(aux);
+                    almacenarDigitos += posfija[i];
+                    if (posfija[i + 1] == ' ') 
+                    {
+                        Int32.TryParse(almacenarDigitos, out aux);
+                        pila.Push(aux);
+                        almacenarDigitos = "";
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                    
                 }
                 else if (posfija[i] == '+' || posfija[i] == '-' || posfija[i] == '*' || posfija[i] == '/' || posfija[i] == '^')
                 {
